@@ -56,7 +56,6 @@ for number in range(int(input()), int(input()) + 1):
 for number in range(int(input()), int(input()) + 1):
     print(number) if sum([str(number).count(str(digit)) == 3 for digit in str(number)]) > 0 else None
 ```
-Но так работает медленее из-за ненужных повторяющихся действий
 
 ## D. Таблица умножения - 2
 Когда-то давно на обороте школьных тетрадок печатали таблицу умножения. 
