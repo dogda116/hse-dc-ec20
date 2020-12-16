@@ -54,7 +54,7 @@ for number in range(int(input()), int(input()) + 1):
 И снова сжатая версия:
 ```python
 for number in range(int(input()), int(input()) + 1):
-    print(number) if sum([str(number).count(str(digit)) == 3 for digit in range(10)]) > 0 else None
+    print(number) if sum([str(number).count(str(digit)) == 3 for digit in str(number)]) > 0 else None
 ```
 Но так работает медленее из-за ненужных повторяющихся действий
 
